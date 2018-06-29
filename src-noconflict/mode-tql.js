@@ -78,7 +78,7 @@ oop.inherits(SqlHighlightRules, TextHighlightRules);
 exports.SqlHighlightRules = SqlHighlightRules;
 });
 
-ace.define("ace/mode/sql",[], function(require, exports, module) {
+ace.define("ace/mode/tql",[], function(require, exports, module) {
 "use strict";
 
 var oop = require("../lib/oop");
@@ -95,14 +95,14 @@ oop.inherits(Mode, TextMode);
 
     this.lineCommentStart = "--";
 
-    this.$id = "ace/mode/sql";
+    this.$id = "ace/mode/tql";
 }).call(Mode.prototype);
 
 exports.Mode = Mode;
 
 });
                 (function() {
-                    ace.require(["ace/mode/sql"], function(m) {
+                    ace.require(["ace/mode/tql"], function(m) {
                         if (typeof module == "object" && typeof exports == "object" && module) {
                             module.exports = m;
                         }
